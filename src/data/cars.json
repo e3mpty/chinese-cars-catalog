@@ -1,0 +1,74 @@
+[
+    {
+      "id": 1,
+      "brand": "Chery",
+      "model": "Tiggo 8 Pro",
+      "year": 2024,
+      "engineL": 2.0,
+      "fuelType": "petrol",
+      "bodyType": "SUV",
+      "priceCny": 185000,
+      "imageUrl": "",
+      "description": "Популярный семейный кроссовер с богатой комплектацией"
+    },
+    {
+      "id": 2,
+      "brand": "Haval",
+      "model": "Jolion",
+      "year": 2024,
+      "engineL": 1.5,
+      "fuelType": "petrol",
+      "bodyType": "SUV",
+      "priceCny": 120000,
+      "imageUrl": "",
+      "description": "Компактный городской кроссовер"
+    },
+    {
+      "id": 3,
+      "brand": "Geely",
+      "model": "Atlas Pro",
+      "year": 2023,
+      "engineL": 1.8,
+      "fuelType": "petrol",
+      "bodyType": "SUV",
+      "priceCny": 150000,
+      "imageUrl": "",
+      "description": "Среднеразмерный кроссовер с развитой электроникой"
+    },
+    {
+      "id": 4,
+      "brand": "BYD",
+      "model": "Seal",
+      "year": 2024,
+      "engineL": 0,
+      "fuelType": "electric",
+      "bodyType": "sedan",
+      "priceCny": 210000,
+      "imageUrl": "",
+      "description": "Электрический седан с запасом хода до 700 км"
+    },
+    {
+      "id": 5,
+      "brand": "Omoda",
+      "model": "C5",
+      "year": 2023,
+      "engineL": 1.6,
+      "fuelType": "petrol",
+      "bodyType": "SUV",
+      "priceCny": 110000,
+      "imageUrl": "",
+      "description": "Стильный городской кроссовер"
+    },
+    {
+      "id": 6,
+      "brand": "Lixiang",
+      "model": "L7",
+      "year": 2024,
+      "engineL": 1.5,
+      "fuelType": "hybrid",
+      "bodyType": "SUV",
+      "priceCny": 320000,
+      "imageUrl": "",
+      "description": "Премиальный гибридный внедорожник"
+    }
+  ]
