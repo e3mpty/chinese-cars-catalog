@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Каталог китайских авто — калькулятор ввоза в РФ</title>
+  <script type="module" crossorigin src="/chinese-cars-catalog/assets/index-DBn7-IsR.js"></script>
+  <link rel="stylesheet" crossorigin href="/chinese-cars-catalog/assets/index-DmSprEOR.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <span class="logo">🚗 ChinaAuto RU</span>
+      <nav class="main-nav">
+        <a href="#catalog" class="nav-link active" data-section="catalog">Каталог</a>
+        <a href="#calculator" class="nav-link" data-section="calculator">Калькулятор</a>
+        <a href="#history" class="nav-link" data-section="history">История</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- КАТАЛОГ -->
+    <section id="catalog" class="section">
+      <h1>Каталог китайских автомобилей</h1>
+      <div class="filters">
+        <label for="brand-filter">Марка:</label>
+        <select id="brand-filter">
+          <option value="">Все марки</option>
+        </select>
+      </div>
+      <div id="cars-grid" class="cars-grid">
+        <p>Загрузка каталога...</p>
+      </div>
+    </section>
+
+    <!-- КАЛЬКУЛЯТОР -->
+    <section id="calculator" class="section hidden">
+      <h1>Калькулятор ориентировочной стоимости ввоза</h1>
+
+      <div id="rate-block" class="rate-block">
+        <span id="rate-value">Загрузка курса...</span>
+        <button id="retry-rate-btn" class="btn btn-secondary hidden">Обновить курс</button>
+      </div>
+
+      <div id="rate-manual-block" class="hidden">
+        <label for="manual-rate">Курс CNY/RUB (введите вручную):</label>
+        <input type="number" id="manual-rate" placeholder="Например: 12.5" step="0.01" min="1" />
+      </div>
+
+      <form id="calc-form" class="calc-form">
+        <div class="form-group">
+          <label for="price-cny">Цена автомобиля в юанях (CNY):</label>
+          <input type="number" id="price-cny" placeholder="185000" min="1" required />
+        </div>
+        <div class="form-group">
+          <label for="engine-l">Объём двигателя (л):</label>
+          <input type="number" id="engine-l" placeholder="2.0" step="0.1" min="0" required />
+        </div>
+        <div class="form-group">
+          <label for="car-year">Год выпуска:</label>
+          <input type="number" id="car-year" placeholder="2024" min="1990" max="2030" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Рассчитать</button>
+      </form>
+
+      <div id="calc-result" class="calc-result hidden">
+        <h2>Результат расчёта</h2>
+        <table id="result-table" class="result-table"></table>
+        <p class="disclaimer">
+          ⚠️ Расчёт является <strong>ориентировочным</strong> и не имеет юридической силы.
+          Применяется упрощённая модель. Для точных данных обращайтесь к
+          специалистам по таможенному оформлению.
+        </p>
+      </div>
+    </section>
+
+    <!-- ИСТОРИЯ -->
+    <section id="history" class="section hidden">
+      <h1>История расчётов</h1>
+      <button id="clear-history-btn" class="btn btn-danger">Очистить историю</button>
+      <div id="history-list"></div>
+    </section>
+
+  </main>
+
+</body>
+</html>
